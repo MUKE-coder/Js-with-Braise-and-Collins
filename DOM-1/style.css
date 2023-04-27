@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  background: red;
+  padding: 2rem 3rem;
+  width: 500px;
+  border: 1px solid black;
+}
+
+.darkMode {
+  background: black;
+  color: white;
+}
+
+.link {
+  color: purple;
+}
+#infoLink {
+  font-size: 40px;
+}
+section a {
+  background-color: yellow;
+}
+
+.profile-card {
+  width: 300px;
+  padding: 1rem 2rem;
+}
+.profile-card img {
+  width: 100%;
+}
+.profile-cards {
+  display: flex;
+  gap: 1rem;
+}
