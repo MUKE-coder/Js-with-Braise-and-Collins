@@ -6,6 +6,8 @@ cardDiv.innerHTML = "Welcome to Desishub";
 cardDiv.className = "card";
 cardDiv.id = "cardId";
 document.body.appendChild(cardDiv);
+const ball = document.querySelector(".ball");
+console.log(ball);
 
 const anchorTag = document.createElement("a");
 anchorTag.innerHTML = "Visit website";
@@ -32,18 +34,39 @@ const links = document.querySelectorAll("section a");
 console.log(links);
 
 const profileCardContainer = document.querySelector(".profile-cards");
+
+// const src = prompt("Enter image address");
+const src = "./image.webp";
+const heading = "My heading";
+const description =
+  " Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,eveniet!";
+const cardLink = "https://www.desishub.com";
 let profileCard = `
 <div class="profile-card">
-        <img src="./image.webp" alt="" />
-        <h3>Image Heading</h3>
+        <img src=${src} alt="" />
+        <h3>${heading}</h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
-          eveniet!
+         ${description}
         </p>
-        <a href="#">View Details</a>
+        <a href=${cardLink}>View Details</a>
       </div>
 `;
 profileCardContainer.innerHTML = profileCard;
 console.log(profileCardContainer);
 
 // profileCardContainer.appendChild(profileCard);
+
+// REMOVING ELEMENTS
+// const ballParent = ball.parentNode;
+// ballParent.removeChild(ball);
+// console.log(ballParent);
+// ball.remove();
+ball.style.backgroundColor = "red";
+console.log(ball);
+ball.id = "myBall";
+// Modifying classes
+ball.classList.add("br-50");
+ball.classList.remove("br-50");
+const quote = document.querySelector(".quote");
+console.log(quote);
+quote.textContent = prompt("Enter a quote");
