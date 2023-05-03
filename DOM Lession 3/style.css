@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Helvetica, Arial, sans-ser;
+}
+/* body {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 100vh;
+} */
+.container {
+  max-width: 800px;
+  margin: 3rem auto;
+  position: relative;
+}
+.container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.quote-container {
+  max-width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  padding: 3rem 2rem;
+  background-color: rgba(240, 248, 255, 0.8);
+  color: black;
+  /* transform: translate(-50%, -50%); */
+}
+.red {
+  color: red;
+}
+
+.v2 .quote-container {
+  max-width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  padding: 3rem 2rem;
+  background-color: rgba(228, 129, 93, 0.747);
+  color: white;
+  border-radius: 20px;
+  /* transform: translate(-50%, -50%); */
+}
+.v3 .quote-container {
+  max-width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  padding: 3rem 2rem;
+  background-color: rgba(31, 29, 28, 0.747);
+  color: white;
+  border-radius: 20px;
+  /* transform: translate(-50%, -50%); */
+}
