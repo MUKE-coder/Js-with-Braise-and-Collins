@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: azure;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+form {
+  border: 1px solid black;
+  padding: 3rem 2rem;
+  width: 90vw;
+}
+select,
+input {
+  padding: 0.5rem 1rem;
+  font-size: 22px;
+}
+button {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  border: none;
+  border-radius: 5px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.calculation-form {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  /* justify-content: space-between; */
+  padding: 1rem;
+  width: 100vw;
+  background-color: coral;
+}
+.calculation-form form {
+  width: 70%;
+}
+.shape {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
+
+.circle {
+  border-radius: 50%;
+}
+.triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.rectangle {
+  width: 150px;
+}
+.hidden {
+  display: none;
+}

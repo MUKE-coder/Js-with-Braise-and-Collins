@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="shape-form">
+      <form id="formSelectShape">
+        <div class="form-field">
+          <label for="shape">Select the Shape</label>
+          <select>
+            <option value="circle">circle</option>
+            <option value="triangle">triangle</option>
+            <option value="rectangle">rectangle</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="calculation-form">
+      <div class="shape-container">
+        <div class="shape"></div>
+        <p>Area is <span class="area">20</span></p>
+      </div>
+      <div class="area-form">
+        <form id="circleForm" class="hidden">
+          <div class="form-field">
+            <input type="text" id="radius" placeholder="Enter radius" />
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+        <form class="hidden" id="triangleForm">
+          <div class="form-field">
+            <input type="text" placeholder="Enter height" />
+            <input type="text" placeholder="Enter base" />
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+        <form class="hidden" id="rectangleForm">
+          <div class="form-field">
+            <input type="text" placeholder="Enter length" />
+            <input type="text" placeholder="Enter width" />
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
