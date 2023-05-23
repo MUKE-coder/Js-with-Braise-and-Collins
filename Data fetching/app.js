@@ -46,7 +46,7 @@ function displayUI(data) {
         <p class="product-name">${product.title}</p>
         <div class="detail">
           <p>$${product.price}</p>
-          <a href="detail.html">Vie Detail</a>
+          <a href="detail.html?id=${product.id}">View Detail</a>
         </div>
       </div>
     `;
@@ -54,10 +54,3 @@ function displayUI(data) {
     productsContainer.insertAdjacentHTML("beforeend", productTemp);
   });
 }
-
-async function fetchSingleProduct() {
-  const response = await fetch("https://fakestoreapi.com/products/1");
-  const data = await response.json();
-  console.log(data);
-}
-fetchSingleProduct();
