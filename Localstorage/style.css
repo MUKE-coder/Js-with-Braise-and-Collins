@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, "Helvetica Neue";
+}
+body {
+  background-color: aliceblue;
+  padding: 1rem 3rem;
+}
+.todo-list {
+  display: inline-flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.todo-item {
+  padding: 1rem 3rem;
+  background-color: white;
+  border-left: 10px solid purple;
+  cursor: pointer;
+}
+input {
+  padding: 0.5rem 1rem;
+  width: 60%;
+}
+button {
+  background-color: rgb(20, 199, 244);
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+}
+.add-todo-area {
+  background-color: darkblue;
+  width: 100%;
+  padding: 2rem 3rem;
+  margin-bottom: 2rem;
+}
