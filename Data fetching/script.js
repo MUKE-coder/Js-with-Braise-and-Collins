@@ -10,6 +10,7 @@ async function fetchAndDisplaySingleProduct() {
   displayProduct(data);
 }
 fetchAndDisplaySingleProduct();
+
 function displayProduct(data) {
   const productDetail = document.querySelector("#product-detail");
 
