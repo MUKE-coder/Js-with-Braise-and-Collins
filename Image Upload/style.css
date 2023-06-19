@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-ser;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.card {
+  width: 300px;
+  height: auto;
+  border: 2px solid red;
+}
+img {
+  width: 100%;
+}
+form {
+  padding: 1rem 2rem;
+  width: 500px;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+input[type="text"] {
+  padding: 0.6rem 1rem;
+}
+input[type="file"] {
+  display: none;
+}
+label.image-label,
+button {
+  padding: 0.6rem 1rem;
+  background-color: red;
+  border-radius: 5px;
+  color: white;
+  width: 50%;
+}
